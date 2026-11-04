@@ -5,14 +5,31 @@ A small, dependency-free Node.js HTTP API starter project using only Node's buil
 ## Requirements
 
 - Node.js 18 or later
+- Docker (optional, for running the container)
 
-## Run
+## Run with Node.js
 
 ```sh
 npm start
 ```
 
 The server listens on port `3000` by default. Set `PORT` to use another port.
+
+## Run with Docker
+
+Build the image from the repository root:
+
+```sh
+docker build -t mcp-demo .
+```
+
+Start the container and publish port 3000:
+
+```sh
+docker run --rm -p 3000:3000 mcp-demo
+```
+
+The API will be available at `http://localhost:3000`.
 
 ## Endpoints
 
