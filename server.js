@@ -30,7 +30,7 @@ if (require.main === module) {
   const server = createServer();
 
   server.listen(port, () => {
-    console.log(`mcp-demo listening on http://localhost:${port}`);
+    console.log(`mcp-demo1 listening on http://localhost:${port}`);
   });
 }
 
