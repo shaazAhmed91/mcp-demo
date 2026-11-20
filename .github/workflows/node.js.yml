@@ -45,6 +45,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/mcp-demo:latest    
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/mcp-demo:${{ github.sha }}
  
   
